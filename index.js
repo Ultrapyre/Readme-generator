@@ -7,37 +7,37 @@ const fs = require('fs');
 const questions = [
     {
         type: "input",
-        message: "Welcome to the README generator! Because typing stuff up manually takes forever. \n\n What would you like to title this project?",
+        message: "Welcome to the README generator! Because typing stuff up manually takes forever. \n\n What would you like to title this project?\n",
         name: "title"
     },
     {
         type: "input",
-        message: "\nInteresting title. Next, give a brief description of your project. What does it do?",
+        message: "Interesting title. Next, give a brief description of your project. What does it do?\nIf you wish to add a new line, just type in <br/> in place of pressing enter.\n",
         name: "description"
     },
     {
         type: "input",
-        message: "\nI see, I see. How does one install this program? In terms that an average joe would perhaps understand...",
+        message: "I see, I see. How does one install this program? In terms that an average joe would perhaps understand...\n",
         name: "installation"
     },
     {
         type: "input",
-        message: "\nRight, that's installation out of the way. How do you actually USE this program?",
+        message: "Right, that's installation out of the way. How do you actually USE this program?\n",
         name: "usage"
     },
     {
         type: "input",
-        message: "\nIntriguing! So how can someone contribute to this project to make it better, if they want to?",
+        message: "Intriguing! So how can someone contribute to this project to make it better, if they want to?\n",
         name: "contributing"
     },
     {
         type: "input",
-        message: "\nNo program is without its bugs. What sort of tests would you suggest implementing?",
+        message: "No program is without its bugs. What sort of tests would you suggest implementing?\n",
         name: "tests"
     },//note to self: there's too many licenses to feasably implement, so a small selection will do for now.
     { //Might come back to this later to make it more... proper in the future.
         type: "list",
-        message: "\nAlright, now for the boring legal bit: pick a preferred license you'd like to use for this project! Why are there so many to choose from, I have no clue...",
+        message: "Alright, now for the boring legal bit: pick a preferred license you'd like to use for this project! Why are there so many to choose from, I have no clue...",
         choices: [
             "Apache 2.0",
             "Boost",
@@ -50,12 +50,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "\nGot a github Username? Enter it exactly right here! It'll also stuff a link to the github profile right here.",
+        message: "Got a github Username? Enter it exactly right here! It'll also stuff a link to the github profile right here.\n",
         name: "github"
     },
     {
         type: "input",
-        message: "\nAlmost done! Last but not least... what is your email address, so interested parties can ask you additional questions?",
+        message: "Almost done! Last but not least... what is your email address, so interested parties can ask you additional questions?\n",
         name: "email"
     }
 
