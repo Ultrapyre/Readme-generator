@@ -95,8 +95,7 @@ function init() {
         }
 
         const contents = 
-`# ${response.title}
-${license}
+`# ${license} ${response.title}
 
 ## Description:
 
